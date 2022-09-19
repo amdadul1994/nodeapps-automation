@@ -32,7 +32,7 @@ pipeline {
     stage('docker to k8s'){
         steps{
         script{
-            kubernetesDeploy (configs: 'deploymentservice.yaml', kubeconfigId: 'k8sconfigpwd')
+            kubernetesDeploy (configs: 'deploymentservice.yml', kubeconfigId: 'k8sconfigpwd')
         }
         }
     }     
